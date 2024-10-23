@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session 1</title>
+  </head>
+  <body>
+    <h1>Session 1</h1>
+    <div id="container">
+      <div id="task1">
+        <button id="prompt" type="button">Prompt user</button>
+        <p id="result"></p>
+      </div>
+      <div id="task2">
+        <form id="form">
+          <input id="num1" type="text" placeholder="Enter first number" />
+          <input id="num2" type="text" placeholder="Enter second number" />
+          <input
+            type="button"
+            value="Submit"
+            onclick="document.getElementById('result2').innerHTML = larger()"
+          />
+          <p id="result2"></p>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="task.js"></script>
+  <script type="text/javascript">
+    document.getElementById("prompt").onclick = function () {
+      var str1 = prompt("First number");
+      var str2 = prompt("Second number");
+
+      var num1 = parseInt(str1);
+      var num2 = parseInt(str2);
+
+      document.getElementById("result").innerHTML = `The larger of ${num1} and ${num2} is ${
+        num1 > num2 ? num1 : num2
+      }`;
+    };
+  </script>
+</html>
