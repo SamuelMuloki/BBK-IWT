@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4</title>
+  </head>
+  <body>
+    <h1>Lab 4</h1>
+    <div id="container">
+        <form id="form" action="http://localhost:8080/translate" method="GET">
+            <label for="translate-word">Enter word to translate</label>
+            <input id="translate-word" type="text" placeholder="Enter words" name="word" />
+            <input type="submit" value="Submit" />
+        </form>
+        <form id="form2">
+            <label for="translate-word2">Enter word to translate</label>
+            <input id="translate-word2" type="text" placeholder="Enter words" />
+            <input type="submit" value="Submit" />
+            <p id="result"></p>
+        </form>
+    </div>
+  </body>
+  <script src="task2.js"></script>
+</html>

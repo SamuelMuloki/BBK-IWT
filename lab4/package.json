@@ -1,0 +1,19 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "MSC Advanced Computing IWT Lab session 4",
+  "main": "task1.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "node task1.js"
+  },
+  "keywords": [
+    "Node",
+    "JS"
+  ],
+  "author": "samuelMuloki",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}
